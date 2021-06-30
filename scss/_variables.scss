@@ -1,0 +1,30 @@
+/* The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+*/
+
+/* COLORS */
+$softRed: hsl(7, 99%, 70%);
+$yellow: hsl(51, 100%, 49%);
+$darkCyan: hsl(167, 40%, 24%);
+$darkBlue: hsl(198, 62%, 26%);
+$veryDarkBlue: hsl(212, 27%, 19%);
+$veryDarkGrayBlue: hsl(213, 9%, 39%);
+$darkGrayBlue: hsl(232, 10%, 55%);
+$grayBlue: hsl(210, 4%, 67%);
+$white: hsl(0, 0%, 100%);
+
+/* Body font size: 18px */
+
+/* FONTS 
+- Family: [Barlow](https://fonts.google.com/specimen/Barlow)
+- Weights: 600
+- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
+- Weights: 700, 900
+
+*/
+/* FONT SIZES */
+$small: 1rem; // 18px
+$medium: 2em;
+$large: 3em;

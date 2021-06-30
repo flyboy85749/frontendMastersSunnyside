@@ -1,0 +1,269 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  color: $white;
+  background-image: url('/images/desktop/image-header.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 2em 1em;
+  width: 100%;
+}
+
+.header h1 {
+  margin-left: 2em;
+  font-size: $medium;
+}
+
+.header h2 {
+  font-family: 'Fraunces', sans-serif;
+  font-size: $large;
+  padding: 2em 0 0 8.5em;
+  letter-spacing: 0.148em;
+}
+.header li {
+  list-style-type: none;
+}
+
+.header a {
+  color: $white;
+  text-decoration: none;
+}
+
+.row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100vw;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav a {
+  font-size: $small;
+}
+
+.contact {
+  font-family: 'Barlow', sans-serif;
+  font-size: $small;
+  text-transform: uppercase;
+  border-radius: 100px;
+  border: none;
+  padding: 1em 1.5em;
+}
+
+.contact:hover {
+  color: $white;
+  background-color: #a9e2ec;
+}
+
+.column {
+  margin: 0;
+  padding: 0;
+}
+
+.arrow {
+  margin: 10em 0 0 43em;
+}
+
+.transform h3,
+.stand-out h3 {
+  font-size: $large;
+  color: $veryDarkBlue;
+  font-family: 'Fraunces', sans-serif;
+  margin: 3em 3em 0.5em 3em;
+}
+
+.transform p,
+.stand-out p {
+  color: $grayBlue;
+  padding: 0 11em 2em 9em;
+}
+
+.learn1,
+.learn2 {
+  color: $veryDarkBlue;
+  margin-left: 9em;
+}
+
+.learn1 {
+  background-image: url('/images/desktop/learn1_bg_start.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.learn1:hover {
+  background-image: url('/images/desktop/learn1_bg.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.learn2 {
+  background-image: url('/images/desktop/learn2_bg_start.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.learn2:hover {
+  background-image: url('/images/desktop/learn2_bg.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.egg {
+  margin-top: 0.7em;
+}
+
+.cup {
+  margin: 0.4em 0 0 0.7em;
+}
+
+.cherries {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/images/desktop/image-graphic-design.jpg');
+  background-repeat: no-repeat;
+  // background-size: cover;
+  object-fit: contain;
+  height: 100vh;
+  margin: 0.4em 0 0 0.7em;
+}
+
+.cherries h3,
+.orange h3 {
+  color: $veryDarkGrayBlue;
+  font-size: $medium;
+  font-family: 'Fraunces', sans-serif;
+  margin: 0 0 1em 0;
+}
+
+.cherries p,
+.orange p {
+  color: $veryDarkGrayBlue;
+  padding: 0 12em;
+  text-align: center;
+}
+
+.orange {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/images/desktop/image-photography.jpg');
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0.4em 0.8em 0 0;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+}
+
+.heading h3 {
+  font-family: 'Fraunces', sans-serif;
+  font-size: $large;
+  color: $grayBlue;
+  letter-spacing: 0.201em;
+  margin: -5em 0 3em 0;
+}
+
+.testimonials {
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials img {
+  border-radius: 50%;
+  margin-bottom: 4em;
+}
+
+.emily,
+.jennie,
+.thomas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote {
+  color: $darkGrayBlue;
+  padding: 1em 5.5em;
+  text-align: center;
+  line-height: 1.8em;
+}
+
+.cite {
+  font-weight: 900;
+  font-size: 1.438rem;
+  font-family: 'Fraunces', sans-serif;
+  margin: 3em 0 0.2em 0;
+}
+
+.position {
+  color: $grayBlue;
+  margin: 0 0 9em 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(169, 226, 236);
+}
+
+.footer h4 {
+  font-size: $medium;
+  color: $darkBlue;
+  margin: 1em 0 2em 0;
+}
+
+.footer ul {
+  display: flex;
+  gap: 4em;
+  margin: 0 0 3em 0;
+}
+
+.footer a {
+  color: $darkGrayBlue;
+}
+
+.footer a:hover,
+.footer i:hover {
+  color: $white;
+}
+
+.icons {
+  display: flex;
+  gap: 2.5em;
+  margin: 2em 0 4em 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
