@@ -17,14 +17,17 @@ $white: hsl(0, 0%, 100%);
 
 /* Body font size: 18px */
 
-/* FONTS 
-- Family: [Barlow](https://fonts.google.com/specimen/Barlow)
-- Weights: 600
-- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
-- Weights: 700, 900
+/* FONTS */
+$serif: 'Fraunces', serif;
+$sans-serif: 'Barlow', sans-serif;
 
-*/
 /* FONT SIZES */
 $small: 1rem; // 18px
 $medium: 2em;
 $large: 3em;
+
+/* WEIGHTS */
+$light: 300;
+$normal: 600;
+$semiBold: 700;
+$bold: 900;
