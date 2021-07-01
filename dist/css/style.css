@@ -5,25 +5,27 @@
 */
 /* COLORS */
 /* Body font size: 18px */
-/* FONTS 
-- Family: [Barlow](https://fonts.google.com/specimen/Barlow)
-- Weights: 600
-- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
-- Weights: 700, 900
-
-*/
+/* FONTS */
 /* FONT SIZES */
+/* WEIGHTS */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 body {
-  font-family: 'Barlow', sans-serif;
+  font-family: "Fraunces", serif;
   font-size: 1rem;
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Fraunces", serif;
 }
 
 .header {
@@ -39,14 +41,13 @@ body {
 
 .header h1 {
   margin-left: 2em;
-  font-size: 2em;
 }
 
 .header h2 {
-  font-family: 'Fraunces', sans-serif;
-  font-size: 3em;
-  padding: 2em 0 0 8.5em;
+  font-size: 2em;
+  padding: 2em 0 1em 0;
   letter-spacing: 0.148em;
+  text-align: center;
 }
 
 .header li {
@@ -62,72 +63,45 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100vw;
 }
 
-nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-nav a {
-  font-size: 1rem;
-}
-
-.contact {
-  font-family: 'Barlow', sans-serif;
-  font-size: 1rem;
-  text-transform: uppercase;
-  border-radius: 100px;
-  border: none;
-  padding: 1em 1.5em;
-}
-
-.contact:hover {
-  color: white;
-  background-color: #a9e2ec;
-}
-
-.column {
-  margin: 0;
-  padding: 0;
+.hide-for-mobile {
+  display: none;
 }
 
 .arrow {
-  margin: 10em 0 0 43em;
+  margin-left: 10em;
+  width: 2em;
+}
+
+.egg-columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
 }
 
 .transform h3,
 .stand-out h3 {
-  font-size: 3em;
+  font-size: 2em;
   color: #23303e;
-  font-family: 'Fraunces', sans-serif;
-  margin: 3em 3em 0.5em 3em;
+  margin: 1em 3em 0.5em 3em;
 }
 
 .transform p,
 .stand-out p {
   color: #a7abae;
-  padding: 0 11em 2em 9em;
+  padding: 0 3em 2em 3em;
+  text-align: center;
 }
 
 .learn1,
 .learn2 {
   color: #23303e;
-  margin-left: 9em;
+  margin-left: 8em;
 }
 
 .learn1 {
@@ -154,14 +128,6 @@ nav a {
   background-position: bottom;
 }
 
-.egg {
-  margin-top: 0.7em;
-}
-
-.cup {
-  margin: 0.4em 0 0 0.7em;
-}
-
 .cherries {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -178,24 +144,24 @@ nav a {
           align-items: center;
   background-image: url("/images/desktop/image-graphic-design.jpg");
   background-repeat: no-repeat;
-  -o-object-fit: contain;
-     object-fit: contain;
+  background-position: 50%;
   height: 100vh;
-  margin: 0.4em 0 0 0.7em;
+  width: 100%;
+  margin-top: 4em;
 }
 
 .cherries h3,
 .orange h3 {
   color: #5a636c;
   font-size: 2em;
-  font-family: 'Fraunces', sans-serif;
-  margin: 0 0 1em 0;
+  font-family: "Fraunces", serif;
+  margin: 10em 0 1em 0;
 }
 
 .cherries p,
 .orange p {
   color: #5a636c;
-  padding: 0 12em;
+  padding: 0 2em;
   text-align: center;
 }
 
@@ -215,8 +181,10 @@ nav a {
           align-items: center;
   background-image: url("/images/desktop/image-photography.jpg");
   background-repeat: no-repeat;
+  background-position: 50%;
   height: 100vh;
-  margin: 0.4em 0.8em 0 0;
+  width: 100%;
+  margin-top: -4.2em;
 }
 
 .heading {
@@ -233,11 +201,10 @@ nav a {
 }
 
 .heading h3 {
-  font-family: 'Fraunces', sans-serif;
-  font-size: 3em;
+  font-size: 1rem;
   color: #a7abae;
   letter-spacing: 0.201em;
-  margin: -5em 0 3em 0;
+  margin: 2em 0 3em 0;
 }
 
 .testimonials {
@@ -250,8 +217,11 @@ nav a {
 }
 
 .testimonials img {
+  width: 30%;
   border-radius: 50%;
-  margin-bottom: 4em;
+  margin-bottom: 3em;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .emily,
@@ -274,7 +244,7 @@ nav a {
 
 .quote {
   color: #818498;
-  padding: 1em 5.5em;
+  padding: 1em 2em;
   text-align: center;
   line-height: 1.8em;
 }
@@ -282,13 +252,22 @@ nav a {
 .cite {
   font-weight: 900;
   font-size: 1.438rem;
-  font-family: 'Fraunces', sans-serif;
-  margin: 3em 0 0.2em 0;
+  font-family: "Fraunces", serif;
+  margin: 1em 0 0 0;
 }
 
 .position {
   color: #a7abae;
   margin: 0 0 9em 0;
+}
+
+.four-images .column {
+  margin: 0;
+  padding: 0;
+}
+
+.row2 {
+  margin-top: -0.4em;
 }
 
 .footer {
@@ -329,6 +308,7 @@ nav a {
 .footer a:hover,
 .footer i:hover {
   color: white;
+  cursor: pointer;
 }
 
 .icons {
@@ -340,11 +320,11 @@ nav a {
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 1rem;
   text-align: center;
 }
 
 .attribution a {
-  color: #3e52a3;
+  color: #5a636c;
 }
 /*# sourceMappingURL=style.css.map */

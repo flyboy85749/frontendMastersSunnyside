@@ -3,11 +3,18 @@
 }
 
 body {
-  font-family: 'Barlow', sans-serif;
+  font-family: $serif;
   font-size: 1rem;
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $serif;
 }
 
 .header {
@@ -23,15 +30,15 @@ body {
 
 .header h1 {
   margin-left: 2em;
-  font-size: $medium;
 }
 
 .header h2 {
-  font-family: 'Fraunces', sans-serif;
-  font-size: $large;
-  padding: 2em 0 0 8.5em;
+  font-size: $medium;
+  padding: 2em 0 1em 0;
   letter-spacing: 0.148em;
+  text-align: center;
 }
+
 .header li {
   list-style-type: none;
 }
@@ -43,62 +50,69 @@ body {
 
 .row {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 100vw;
 }
 
-nav ul {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+.hide-for-mobile {
+  display: none;
 }
 
-nav a {
-  font-size: $small;
-}
+// nav ul {
+//   display: flex;
+//   justify-content: space-evenly;
+//   align-items: center;
+// }
 
-.contact {
-  font-family: 'Barlow', sans-serif;
-  font-size: $small;
-  text-transform: uppercase;
-  border-radius: 100px;
-  border: none;
-  padding: 1em 1.5em;
-}
+// nav a {
+//   font-size: $small;
+// }
 
-.contact:hover {
-  color: $white;
-  background-color: #a9e2ec;
-}
+// .contact {
+//   font-family: $sans-serif;
+//   font-size: $small;
+//   text-transform: uppercase;
+//   border-radius: 100px;
+//   border: none;
+//   padding: 1em 1.5em;
+// }
 
-.column {
-  margin: 0;
-  padding: 0;
-}
+// .contact:hover {
+//   color: $white;
+//   background-color: #a9e2ec;
+// }
+
+// .column {
+//   margin: 0;
+//   padding: 0;
+// }
 
 .arrow {
-  margin: 10em 0 0 43em;
+  margin-left: 10em;
+  width: 2em;
+}
+
+.egg-columns {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .transform h3,
 .stand-out h3 {
-  font-size: $large;
+  font-size: $medium;
   color: $veryDarkBlue;
-  font-family: 'Fraunces', sans-serif;
-  margin: 3em 3em 0.5em 3em;
+  margin: 1em 3em 0.5em 3em;
 }
 
 .transform p,
 .stand-out p {
   color: $grayBlue;
-  padding: 0 11em 2em 9em;
+  padding: 0 3em 2em 3em;
+  text-align: center;
 }
 
 .learn1,
 .learn2 {
   color: $veryDarkBlue;
-  margin-left: 9em;
+  margin-left: 8em;
 }
 
 .learn1 {
@@ -125,13 +139,13 @@ nav a {
   background-position: bottom;
 }
 
-.egg {
-  margin-top: 0.7em;
-}
+// .egg {
+//   margin-top: 0.7em;
+// }
 
-.cup {
-  margin: 0.4em 0 0 0.7em;
-}
+// .cup {
+//   margin: 0.4em 0 0 0.7em;
+// }
 
 .cherries {
   display: flex;
@@ -140,24 +154,24 @@ nav a {
   align-items: center;
   background-image: url('/images/desktop/image-graphic-design.jpg');
   background-repeat: no-repeat;
-  // background-size: cover;
-  object-fit: contain;
+  background-position: 50%;
   height: 100vh;
-  margin: 0.4em 0 0 0.7em;
+  width: 100%;
+  margin-top: 4em;
 }
 
 .cherries h3,
 .orange h3 {
   color: $veryDarkGrayBlue;
   font-size: $medium;
-  font-family: 'Fraunces', sans-serif;
-  margin: 0 0 1em 0;
+  font-family: $serif;
+  margin: 10em 0 1em 0;
 }
 
 .cherries p,
 .orange p {
   color: $veryDarkGrayBlue;
-  padding: 0 12em;
+  padding: 0 2em;
   text-align: center;
 }
 
@@ -168,8 +182,10 @@ nav a {
   align-items: center;
   background-image: url('/images/desktop/image-photography.jpg');
   background-repeat: no-repeat;
+  background-position: 50%;
   height: 100vh;
-  margin: 0.4em 0.8em 0 0;
+  width: 100%;
+  margin-top: -4.2em;
 }
 
 .heading {
@@ -180,11 +196,10 @@ nav a {
 }
 
 .heading h3 {
-  font-family: 'Fraunces', sans-serif;
-  font-size: $large;
+  font-size: 1rem;
   color: $grayBlue;
   letter-spacing: 0.201em;
-  margin: -5em 0 3em 0;
+  margin: 2em 0 3em 0;
 }
 
 .testimonials {
@@ -193,8 +208,10 @@ nav a {
 }
 
 .testimonials img {
+  width: 30%;
   border-radius: 50%;
-  margin-bottom: 4em;
+  margin-bottom: 3em;
+  object-fit: contain;
 }
 
 .emily,
@@ -208,21 +225,30 @@ nav a {
 
 .quote {
   color: $darkGrayBlue;
-  padding: 1em 5.5em;
+  padding: 1em 2em;
   text-align: center;
   line-height: 1.8em;
 }
 
 .cite {
-  font-weight: 900;
+  font-weight: $bold;
   font-size: 1.438rem;
-  font-family: 'Fraunces', sans-serif;
-  margin: 3em 0 0.2em 0;
+  font-family: $serif;
+  margin: 1em 0 0 0;
 }
 
 .position {
   color: $grayBlue;
   margin: 0 0 9em 0;
+}
+
+.four-images .column {
+  margin: 0;
+  padding: 0;
+}
+
+.row2 {
+  margin-top: -0.4em;
 }
 
 .footer {
@@ -252,6 +278,7 @@ nav a {
 .footer a:hover,
 .footer i:hover {
   color: $white;
+  cursor: pointer;
 }
 
 .icons {
@@ -261,9 +288,9 @@ nav a {
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 1rem;
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: $veryDarkGrayBlue;
 }
